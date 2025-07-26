@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile-style.css">
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <div class="header-container">
+                <h1 class="header-text" id="calc">calc</h1>
+                <div class="theme-div">
+                    <div class="theme-div-container">
+                        <h3 class="header-text" id="theme">THEME</h3>
+                        <div class="theme-switcher">
+                            <div class="theme-switcher-container">
+                                <div class="number">
+                                    <h3 class="header-text" id="theme-1">1</h3>
+                                    <h3 class="header-text" id="theme-2">2</h3>
+                                    <h3 class="header-text" id="theme-3">3</h3>
+                                </div>
+                                <div class="rocker">
+                                    <div id="rocker-button-container">
+                                        <div class="rocker-button" id="1"></div>
+                                        <div class="rocker-button" id="2"></div>
+                                        <div class="rocker-button" id="3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="screen">
+            <div id="screen-container">
+                <div id="display"></div>
+            </div>
+        </section>
+
+        <section id="buttons">
+            <div class="buttons-container">
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button id="delete-button">DEL</button>
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button" id="add">+</button>
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button" id="sub">-</button>
+                <button class="button">.</button>
+                <button class="button">0</button>
+                <button class="button" id="div">/</button>
+                <button class="button"id="mul">*</button>
+                <button id="reset-button">RESET</button>
+                <button id="equals-button">=</button>
+            </div>
+        </section>
+    </div>   
+    <script src="./script.js"></script> 
+</body>
+</html>

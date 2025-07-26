@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", "SF Pro Display", sans-serif;
+}
+
+body {
+    background-color: hsl(222, 26%, 31%);
+
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#screen-container {
+    width: 100%;
+    height: 100%;
+    padding: 13% 5% 13% 5%;
+}
+
+#display {
+    text-align: right;
+    font-size: 40px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    font-size: 32px;
+    border-radius: 10px;
+}
+
+#delete-button, #reset-button, #equals-button {
+    color: white;
+} 
+
+/* hover effects */
+
+button:hover, .rocker-button:hover {
+    cursor: pointer;
+}
+
+
+
+
+/* Design for medium and desktop devices */
+
+@media all and (min-width: 768px) {
+    
+    .header-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    header {
+        color: white;
+        width: 50%;
+        margin-top: 2.5%;
+        margin-left: 25%;
+        margin-right: 25%;
+
+    }
+
+    .header-container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5% 0 5%;
+    }
+
+    .theme-div {
+        width: 35%;
+    }
+
+    .theme-div-container {
+        width: 100%;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .theme-div-container > h3 {
+        align-self: self-end;
+    }
+
+    .theme-switcher {
+        margin-left: 20px;
+        width: 50%;
+    }
+
+    .theme-switcher-container {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .number {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .rocker {
+        width: 100px;
+        height: 30px;
+        background-color: hsl(223, 31%, 20%);
+        border-radius: 40px;
+    }
+
+    #rocker-button-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .rocker-button {
+        width: 18%;
+        background-color: hsl(6, 63%, 50%);
+        height: 60%;
+        border-radius: 100%;
+    }
+
+    #screen {
+        margin: 0 25%;
+        width: 50%;
+        height: 25%;
+        margin-top: 2%;
+    }
+
+    #screen-container {
+        width: 100%;
+        height: 120px;
+        background-color: hsl(224, 36%, 15%);
+        border-radius: 10px;
+    }
+
+    #buttons {
+        width: 50%;
+        margin: 2% 25%;
+        height: 60vh;
+        background: hsl(223, 31%, 20%);
+        border-radius: 10px;
+    }
+
+    .buttons-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
+        padding: 5%;
+        gap: 5%;
+    }
+
+    #delete-button {
+        background: hsl(225, 21%, 49%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-color: hsl(224, 28%, 35%);
+    }
+
+    #reset-button {
+        grid-column: 1 / 3;
+        background: hsl(225, 21%, 49%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-color: hsl(224, 28%, 35%);
+    }
+
+    #equals-button {
+        grid-column: 3 / 5;
+        background: hsl(6, 63%, 50%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-color: hsl(6, 70%, 34%);
+    }
+
+    .button {
+        background: hsl(30, 25%, 89%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-color: hsl(28, 16%, 65%);
+        color: hsl(221, 14%, 31%);
+    }
+
+}

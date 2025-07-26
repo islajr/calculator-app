@@ -1,0 +1,155 @@
+@media all and (max-width: 767px) {
+
+    header {
+        color: white;
+        width: 90%;
+        margin: 5% 5%;
+
+    }
+
+    .header-container {
+        width: 100%;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-container > h1 {
+        align-self: center;
+    }
+
+    .theme-div {
+        width: 50%;
+        height: 100%;
+    }
+
+    .theme-div-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: small;
+    }
+
+    .theme-div-container > h3 {
+        padding-top: 20px;
+    }
+
+    .theme-switcher {
+        width: 45%;
+    }
+
+    .theme-switcher-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    
+    .number {
+        display: flex;
+        width: 100px;
+        justify-content: space-evenly;
+    }
+
+    .rocker {
+        width: 100px;
+        height: 40px;
+        background-color: hsl(223, 31%, 20%);
+        border-radius: 20px;
+    }
+
+    #rocker-button-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .rocker-button {
+        width: 25%;
+        background-color: hsl(6, 63%, 50%);
+        height: 60%;
+        border-radius: 100%;
+    }
+    
+    #screen {
+        margin: 0 5%;
+        width: 90%;
+        height: 25%;
+    }
+
+    #screen-container {
+        width: 100%;
+        height: 150px;
+        background-color: hsl(224, 36%, 15%);
+        border-radius: 10px;
+    }
+
+    #buttons {
+        width: 90%;
+        margin: 2% 5%;
+        height: 60vh;
+        background: hsl(223, 31%, 20%);
+        margin-top: 5%;
+        border-radius: 10px;
+    }
+
+    .buttons-container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
+        padding: 5%;
+        gap: 5%;
+    }
+
+    #delete-button {
+        background: hsl(225, 21%, 49%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-color: hsl(224, 28%, 35%);
+        color: white;
+    }
+
+    #reset-button {
+        grid-column: 1 / 3;
+        background: hsl(225, 21%, 49%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-color: hsl(224, 28%, 35%);
+        color: white;
+    }
+
+    #equals-button {
+        grid-column: 3 / 5;
+        background: hsl(6, 63%, 50%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-color: hsl(6, 70%, 34%);
+        color: white;
+        font-size: large;
+        font-weight: 900;
+        border-radius: 10px;
+    }
+
+    .button {
+        background: hsl(30, 25%, 89%);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 5px solid;
+        border-radius: 10px;
+        border-color: hsl(28, 16%, 65%);
+        color: hsl(221, 14%, 31%);
+        
+    }
+
+}
